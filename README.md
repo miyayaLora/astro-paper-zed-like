@@ -101,13 +101,13 @@ You can start using this project locally by running the following command in you
 
 ```bash
 # pnpm
-pnpm create astro@latest --template satnaing/astro-paper
+pnpm create astro@latest --template miyayaLora/astro-paper-zed-like
 
 # npm
-npm create astro@latest -- --template satnaing/astro-paper
+npm create astro@latest -- --template miyayaLora/astro-paper-zed-like
 
 # yarn
-yarn create astro --template satnaing/astro-paper
+yarn create astro --template miyayaLora/astro-paper-zed-like
 ```
 
 Then start the project by running the following commands:

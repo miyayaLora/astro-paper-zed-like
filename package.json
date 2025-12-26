@@ -5,7 +5,8 @@
   "packageManager": "pnpm@10.26.2",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build && pagefind --site dist && cp -r dist/pagefind public/",
+    "build-pagefind": "rm -rf public/pagefind && rm -rf dist/pagefind && pnpm dlx pagefind@latest --site dist && cp -r dist/pagefind public/",
+    "build": "astro check && astro build && pnpm build-pagefind",
     "preview": "astro preview",
     "sync": "astro sync",
     "astro": "astro",
@@ -42,7 +43,6 @@
     "hast-util-heading": "^3.0.0",
     "hast-util-heading-rank": "^3.0.0",
     "hastscript": "^9.0.1",
-    "pagefind": "^1.4.0",
     "prettier": "^3.7.4",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.14",
